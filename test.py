@@ -17,8 +17,8 @@ def get_core_domain(url):
     return ext.domain  # Just the core (e.g., 'zimblecode')
 
 # Load Excel files
-file_a = '/home/soham/Desktop/Projects/test/Yuvraj-Excel 1.xlsx'
-file_b = '/home/soham/Desktop/Projects/test/pixelcrayons.com-backlinks.xlsx'
+file_a = '<file_a url>'
+file_b = '<file_b url>'
 
 # Load the files
 df_a = pd.read_excel(file_a)
@@ -45,5 +45,5 @@ df_b = df_b[~df_b['Source url'].str.contains('domain-list|blogspot\.com', case=F
 
 
 # Save result
-df_b.to_excel('/home/soham/Desktop/Projects/test/matched_output_03-06-2025.xlsx', index=False)
+df_b.to_excel('<result_url>', index=False)
 print("✅ Matching complete. Results saved to 'matched_output.xlsx'.")
